@@ -41,6 +41,7 @@
     "gulp-swig": "^0.7.4",
     "gulp-uglify": "^1.1.0",
     "gulp-util": "^3.0.4",
+    "gulp-watch": "^4.2.4",
     "handlebars": "^3.0.0",
     "hbsfy": "~2.2.1",
     "karma": "^0.12.31",
@@ -53,8 +54,7 @@
     "merge-stream": "^0.1.7",
     "pretty-hrtime": "~1.0.0",
     "require-dir": "^0.1.0",
-    "vinyl-source-stream": "~1.0.0",
-    "watchify": "^2.4.0"
+    "vinyl-source-stream": "~1.0.0"
   },
   "dependencies": {
     "jquery": "~2.1.0"
