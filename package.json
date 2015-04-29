@@ -6,24 +6,12 @@
     "type": "git",
     "url": "git://github.com/greypants/gulp-starter.git"
   },
-  "//": [
-    "The following 'underscore' example demonstrates exposing a module included ",
-    "by another module. If you were to npm install underscore separately and ",
-    "require('underscore'), you'd end up with two copies in your bundle. The one",
-    "you installed, and the one that shipped with another package (backbone in ",
-    "this example). This is an edge case and should rarely happen.",
-    "",
-    "The 'plugin' example makes that file requireable with `require('plugin')`,",
-    "and available to browserify-shim as 'plugin' on line 30."
-  ],
   "browser": {
-    "underscore": "backbone/node_modules/underscore",
-    "plugin": "./src/javascript/vendor/jquery-plugin.js"
+    "plugin": "./src/js/vendor/jquery-plugin.js"
   },
   "browserify": {
     "transform": [
       "browserify-shim",
-      "coffeeify",
       "hbsfy"
     ]
   },
@@ -39,7 +27,6 @@
     "browser-sync": "~2.2.2",
     "browserify": "^9.0.3",
     "browserify-shim": "^3.8.2",
-    "coffeeify": "~1.0.0",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-changed": "^1.1.1",
@@ -59,7 +46,6 @@
     "karma": "^0.12.31",
     "karma-browserify": "^4.0.0",
     "karma-chrome-launcher": "^0.1.7",
-    "karma-coffee-preprocessor": "^0.2.1",
     "karma-mocha": "^0.1.10",
     "karma-nyan-reporter": "0.0.51",
     "karma-sinon-chai": "^0.3.0",
@@ -71,7 +57,6 @@
     "watchify": "^2.4.0"
   },
   "dependencies": {
-    "backbone": "~1.1.2",
     "jquery": "~2.1.0"
   }
 }
