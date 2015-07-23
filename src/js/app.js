@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-var message = '<h2>lick my back…</h2>';
+var message = '<h2>World</h2>';
 
 $('body').append(message);
 
